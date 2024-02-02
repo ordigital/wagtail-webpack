@@ -77,10 +77,20 @@ module.exports = {
       },
     }),
     // Copy img folders to static (we use `context` to keep structure)
+    // and `noErrorOnMissing: true` not to show errors when no files to copy
     new CopyWebpackPlugin({
       patterns: [
-        { from: '*', context: path.resolve(__dirname, 'app/assets/img'), to: path.resolve(__dirname, 'app/static/img/') },
-        { from: '*', context: path.resolve(__dirname, 'app/assets/admin/img'), to: path.resolve(__dirname, 'app/static/admin/img/') },
+        { 
+          from: '*', 
+          context: path.resolve(__dirname, 'app/assets/img'), 
+          to: path.resolve(__dirname, 'app/static/img/'),
+          noErrorOnMissing: true,
+        },
+        { from: '*', 
+          context: path.resolve(__dirname, 'app/assets/admin/img'), 
+          to: path.resolve(__dirname, 'app/static/admin/img/'),
+          noErrorOnMissing: true,
+        },
       ],
     })
   ]
