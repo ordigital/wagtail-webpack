@@ -1,3 +1,9 @@
+/**
+ * wagtail-webpack config
+ * Adam Mateusz Brożyński 2024
+ * MIT License
+ */
+
 'use strict'
 
 const path = require('path')
@@ -44,7 +50,7 @@ module.exports = {
 
   devServer: {
     // Run dev server with hot reload and writing output files to disk
-    port: 8081,
+    port: 8001,
     compress: true,
     hot: true,
     devMiddleware: {
@@ -77,7 +83,6 @@ module.exports = {
       },
     }),
     // Copy img folders to static (we use `context` to keep structure)
-    // and `noErrorOnMissing: true` not to show errors when no files to copy
     new CopyWebpackPlugin({
       patterns: [
         { 
