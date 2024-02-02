@@ -1,0 +1,32 @@
+{
+  "name": "wagtail-webpack",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "NODE_ENV=${NODE_ENV:-production} webpack --mode=production",
+    "start": "webpack-dev-server"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": ">=4.0.0 <5.0.0",
+    "css-loader": ">=6.10.0 <7.0.0",
+    "file-loader": ">=6.2.0 <7.0.0",
+    "mini-css-extract-plugin": ">=2.8.0 <3.0.0",
+    "webpack": ">=5.90.1 <6.0.0",
+    "webpack-cli": ">=5.1.0 <6.0.0", 
+    "webpack-dev-server": ">=4.15.0 <5.0.0",
+    "@babel/core": ">=7.23 <8.0",
+    "@babel/preset-env": ">=7.23 <8.0",
+    "babel-loader": ">=9.1 <10.0",
+    "autoprefixer": ">=10.4 <11.0",
+    "postcss-loader": ">=8.1.0 <9.0.0",
+    "style-loader": ">=3.3.0 <4.0.0",
+    "sass-loader": ">=14.1.0 <15.0.0",
+    "sass": ">=1.70.0 <2.0.0",
+    "copy-webpack-plugin": ">=12.0.0 <13.0.0",
+    "bootstrap": ">=5.3.0 <6.0.0",
+    "@popperjs/core": ">=2.11 <3.0"
+  },
+  "engines": {
+    "node": ">=12"
+  }
+}
