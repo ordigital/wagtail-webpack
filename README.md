@@ -1,6 +1,6 @@
 # wagtail-webpack
 
-Webpack config for Wagtail. No additional Wagtail/django modules needed.
+Webpack config for Wagtail. No additional Wagtail/Django modules needed.
 
 ## Instructions
 
